@@ -6,10 +6,6 @@
     name: git
     state: present
 
-- name: Load ip6_tables module
-  become: yes
-  command: modprobe ip6_tables
-
 - name: Check if mailcow installation directory exists
   become: yes
   stat:
